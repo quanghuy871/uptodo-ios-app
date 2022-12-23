@@ -1,0 +1,22 @@
+.empty-screen {
+  height: 100%;
+  padding-top: 130px;
+
+  &__inner {
+    padding: 0 24px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: rem(20px);
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: rem(16px);
+    font-weight: 400;
+  }
+}
