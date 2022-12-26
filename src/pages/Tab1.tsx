@@ -1,9 +1,9 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import EmptyScreen from "../components/EmptyScreen";
+import {IonContent, IonHeader, IonPage, IonTitle, IonToolbar} from '@ionic/react';
 import './Tab1.css';
+import TaskList from "../components/TaskList";
 
 const Tab1: React.FC = () => {
+
   return (
     <IonPage>
       <IonHeader>
@@ -18,7 +18,7 @@ const Tab1: React.FC = () => {
           </IonToolbar>
         </IonHeader>
 
-        <EmptyScreen/>
+        <TaskList/>
       </IonContent>
     </IonPage>
   );

@@ -20,31 +20,15 @@ $font-size-root: 16px;
 /*************************************************/
 /* COLORS */
 $c-white-1: #f9f9f9;
-$ice-white: #e9ecef;
-$red: #e72f01;
-$gray: #F5F5F5;
-$gray-dark: #999493;
-$gray-light: #FAFAFA;
-$black: #342A25;
-$smoke-black: #2F2F2F;
-$jet-black: #2F2F2F;
-$ice-black: #5A5B5E;
-$charcoal-black: #1C1C1C;
-$gray-darker: rgba(0, 0, 0, 0.6);
+$c-black-1: #000000;
+$jet-black: #979797;
+$purple: #8687E7;
 
 $colors: (
         'white-1': $c-white-1,
-        'red' : $red,
-        'gray': $gray,
-        'gray-dark': $gray-dark,
-        'gray-darker': $gray-darker,
-        'gray-light': $gray-light,
-        'black': $black,
-        'smoke-black' : $smoke-black,
-        'jet-black' : $jet-black,
-        'ice-black' : $ice-black,
-        'ice-white' : $ice-white,
-        'charcoal-black' : $charcoal-black,
+        'c-black-1': $c-black-1,
+        'jet-black': $jet-black,
+        'purple': $purple,
 );
 
 

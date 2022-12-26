@@ -1,3 +1,45 @@
+/*************************************************/
+/* SCREEN BREAKPOINTS */
+/*************************************************/
+/* FONTS */
+/*************************************************/
+/* COLORS */
+.c-white-1 {
+  color: #f9f9f9;
+}
+
+.bg-white-1 {
+  background-color: #f9f9f9;
+}
+
+.c-c-black-1 {
+  color: #000000;
+}
+
+.bg-c-black-1 {
+  background-color: #000000;
+}
+
+.c-jet-black {
+  color: #979797;
+}
+
+.bg-jet-black {
+  background-color: #979797;
+}
+
+.c-purple {
+  color: #8687E7;
+}
+
+.bg-purple {
+  background-color: #8687E7;
+}
+
+/*************************************************/
+/* IMAGES */
+/*************************************************/
+/* SPACINGS */
 /* Ionic Variables and Theming. For more info, please see:
 http://ionicframework.com/docs/theming/ */
 /** Ionic CSS Variables **/
@@ -202,112 +244,207 @@ http://ionicframework.com/docs/theming/ */
     --ion-card-background: #1e1e1e;
   }
 }
-/*************************************************/
-/* SCREEN BREAKPOINTS */
-/*************************************************/
-/* FONTS */
-/*************************************************/
-/* COLORS */
-.c-white-1 {
-  color: #f9f9f9;
+html {
+  font-size: 16px;
 }
 
-.bg-white-1 {
-  background-color: #f9f9f9;
+body {
+  transition: all ease-in-out 0.3s;
+  font-family: Lato, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1rem;
+  margin: 0;
 }
 
-.c-red {
-  color: #e72f01;
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: var(--f-sans-serif);
+  color: var(--text-color-1);
 }
 
-.bg-red {
-  background-color: #e72f01;
+h1,
+.h1 {
+  font-size: 2.25rem;
+}
+@media (min-width: 768px) {
+  h1,
+.h1 {
+    font-size: 2.625rem;
+  }
 }
 
-.c-gray {
-  color: #F5F5F5;
+h2,
+.h2 {
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+@media (min-width: 992px) {
+  h2,
+.h2 {
+    margin-bottom: 0;
+  }
+}
+h2.link,
+.h2.link {
+  cursor: pointer;
+  font-weight: bold;
+}
+h2.underline,
+.h2.underline {
+  text-decoration: underline;
 }
 
-.bg-gray {
-  background-color: #F5F5F5;
+h3,
+.h3 {
+  font-size: 2rem;
 }
 
-.c-gray-dark {
-  color: #999493;
+h4,
+.h4 {
+  font-size: 1.5rem;
 }
 
-.bg-gray-dark {
-  background-color: #999493;
+h5,
+.h5 {
+  font-size: 1.375rem;
 }
 
-.c-gray-darker {
-  color: rgba(0, 0, 0, 0.6);
+h6,
+.h6 {
+  font-size: 1.25rem;
 }
 
-.bg-gray-darker {
-  background-color: rgba(0, 0, 0, 0.6);
+p {
+  font-family: "Cartograph CF", sans-serif;
+  margin-bottom: 15px;
+  color: var(--text-color-1);
+}
+@media (min-width: 1200px) {
+  p {
+    margin-bottom: 25px;
+  }
+}
+p:last-child {
+  margin-bottom: 0;
 }
 
-.c-gray-light {
-  color: #FAFAFA;
+a {
+  color: var(--text-color-1);
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
 }
 
-.bg-gray-light {
-  background-color: #FAFAFA;
+textarea,
+input[type=password],
+input[type=number],
+input[type=tel],
+input[type=search],
+input[type=phone],
+input[type=date],
+input[type=text],
+input[type=email] {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-.c-black {
-  color: #342A25;
+.section {
+  padding: 45px 0;
+}
+@media (min-width: 992px) {
+  .section {
+    padding: 90px 0;
+  }
+}
+@media (min-width: 992px) {
+  .section.section-sm {
+    padding: 45px 0;
+  }
+}
+@media (min-width: 992px) {
+  .section.section-md {
+    padding: 75px 0;
+  }
+}
+@media (min-width: 992px) {
+  .section.section-lg {
+    padding: 135px 0;
+  }
 }
 
-.bg-black {
-  background-color: #342A25;
+@media (min-width: 1200px) {
+  .content-page {
+    padding: 50px 0;
+  }
 }
 
-.c-smoke-black {
-  color: #2F2F2F;
+.container {
+  width: unset !important;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 576px) {
+  .container {
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    max-width: 768px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+@media (min-width: 1700px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+@media (min-width: 768px) {
+  .container-fluid--alt {
+    padding-right: calc(var(--bs-gutter-x, 0.75rem) * 2);
+    padding-left: calc(var(--bs-gutter-x, 0.75rem) * 2);
+  }
 }
 
-.bg-smoke-black {
-  background-color: #2F2F2F;
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
-.c-jet-black {
-  color: #2F2F2F;
+.ion-tab-bar {
+  justify-content: space-between;
+  padding-bottom: 45px;
 }
 
-.bg-jet-black {
-  background-color: #2F2F2F;
-}
-
-.c-ice-black {
-  color: #5A5B5E;
-}
-
-.bg-ice-black {
-  background-color: #5A5B5E;
-}
-
-.c-ice-white {
-  color: #e9ecef;
-}
-
-.bg-ice-white {
-  background-color: #e9ecef;
-}
-
-.c-charcoal-black {
-  color: #1C1C1C;
-}
-
-.bg-charcoal-black {
-  background-color: #1C1C1C;
-}
-
-/*************************************************/
-/* IMAGES */
-/*************************************************/
-/* SPACINGS */
 .empty-screen {
   height: 100%;
   padding-top: 130px;
@@ -326,6 +463,87 @@ http://ionicframework.com/docs/theming/ */
 .empty-screen p {
   font-size: 1rem;
   font-weight: 400;
+}
+
+.add-button {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, -65px);
+  height: 64px;
+  --background: #8687E7;
+}
+
+.task-list h1 {
+  margin-bottom: 20px;
+}
+.task-list .item {
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+.task-list__inner {
+  padding: 20px 24px 70px;
+}
+.task-list__item {
+  width: 100%;
+  padding: 10px 0 10px;
+}
+.task-list__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-list__top h6 {
+  margin: 0 0 5px 0;
+  max-width: 300px;
+}
+.task-list__bottom {
+  display: flex;
+  align-items: end;
+}
+.task-list__time {
+  padding: 4px 4px 4px 0;
+  margin-right: 10px;
+}
+.task-list__time p {
+  margin: 0;
+}
+.task-list__cat {
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: #f9f9f9;
+}
+
+.cat-item {
+  text-align: center;
+}
+.cat-item__list {
+  padding: 20px 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+.cat-item__icon {
+  position: relative;
+  margin: 0 auto 10px;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.cat-item__text {
+  font-size: 13px;
+}
+.cat-item__priority {
+  border-radius: 4px;
+  border: 1px solid #000000;
+}
+.cat-item.selected .cat-item__priority {
+  background-color: #8687E7;
+  color: #f9f9f9;
+  border-color: #8687E7;
 }
 
 /*# sourceMappingURL=main.css.map */

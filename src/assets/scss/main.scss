@@ -1,5 +1,10 @@
-@import "general";
-@import "mixins";
 @import "variables";
+@import "mixins";
+@import "general";
+
+@import "pages/tab1";
 
 @import "components/empty-screen";
+@import "components/add-button";
+@import "components/task-list";
+@import "components/cat-item";
